@@ -14,7 +14,11 @@ const Header = () => (
         morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet
         tellus{" "}
       </p>
-      <button type="button" className="custom__button">
+      <button
+        type="button"
+        className="custom__button"
+        style={{ backgroundColor: "var(--color-golden)" }}
+      >
         Explore Menu
       </button>
     </div>

@@ -35,7 +35,11 @@ const Gallery = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat
           mattis ipsum turpis elit elit scelerisque egestas mu.
         </p>
-        <button type="button" className="custom__button">
+        <button
+          type="button"
+          className="custom__button"
+          style={{ backgroundColor: "var(--color-golden)" }}
+        >
           View More
         </button>
       </div>

@@ -6,13 +6,13 @@ import { meal } from "../../constants";
 import "./Intro.css";
 
 const Intro = () => {
-  const [palyVideo, setPlayVideo] = useState(false);
+  const [playVideo, setPlayVideo] = useState(false);
   const vidRef = React.useRef();
 
   const handleVideo = () => {
     setPlayVideo((prevPlayVideo) => !prevPlayVideo);
 
-    if (palyVideo) {
+    if (playVideo) {
       vidRef.current.pause();
     } else {
       vidRef.current.play();
@@ -33,7 +33,7 @@ const Intro = () => {
           className="app__video-overlay_circle flex__center"
           onClick={handleVideo}
         >
-          {palyVideo ? (
+          {playVideo ? (
             <BsPauseFill color="#fff" fontSize={30} />
           ) : (
             <BsFillPlayFill color="#fff" fontSize={30} />

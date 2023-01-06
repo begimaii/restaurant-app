@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
-
+import { Link } from "react-router-dom";
 import images from "../../constants/images";
 import "./Navbar.css";
 
@@ -17,22 +17,22 @@ const Navbar = () => {
           <a href="#home">Home</a>
         </li>
         <li className="p__opensans">
-          <a href="#home">About</a>
+          <a href="#about">About</a>
         </li>
         <li className="p__opensans">
-          <a href="#home">Menu</a>
+          <a href="#menu">Menu</a>
         </li>
         <li className="p__opensans">
-          <a href="#home">Awards</a>
+          <a href="#award">Awards</a>
         </li>
         <li className="p__opensans">
-          <a href="#home">Contact</a>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
       <div className="app__navbar-login">
-        <a href="#login" className="p__opensans">
+        <Link to="/login" className="p__opensans">
           Log In / Register{" "}
-        </a>
+        </Link>
         <div />
         <a href="/" className="p__opensans">
           Book Table
@@ -56,16 +56,16 @@ const Navbar = () => {
                 <a href="#home">Home</a>
               </li>
               <li className="p__opensans">
-                <a href="#home">About</a>
+                <a href="#about">About</a>
               </li>
               <li className="p__opensans">
-                <a href="#home">Menu</a>
+                <a href="#menu">Menu</a>
               </li>
               <li className="p__opensans">
-                <a href="#home">Awards</a>
+                <a href="#awards">Awards</a>
               </li>
               <li className="p__opensans">
-                <a href="#home">Contact</a>
+                <a href="#contact">Contact</a>
               </li>
             </ul>
           </div>
